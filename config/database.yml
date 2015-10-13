@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  host: localhost
+  username: Alex
+
+development:
+  <<: *default
+  database: first_app_development
+
+test:
+  <<: *default
+  database: first_app_development
+
